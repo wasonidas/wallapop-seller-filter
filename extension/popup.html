@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preferencias de vendedores</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <span class="badge">Local · sin servicios de pago</span>
+      <h1>Encuentra vendedores<br>con más confianza.</h1>
+      <p class="intro">Preferencias para las búsquedas de Wallapop.</p>
+      <form id="preferences">
+        <label class="toggle"><span>Filtrado activo</span><input id="enabled" type="checkbox" checked></label>
+        <label for="reviews">Mínimo de reseñas</label>
+        <input id="reviews" name="reviews" type="number" min="0" max="999999" step="1" value="5" required>
+        <label class="toggle" for="verified">
+          <span>Solo identidad verificada</span>
+          <input id="verified" name="verified" type="checkbox">
+        </label>
+        <p class="note">Solo evidencia explícita de identidad en perfiles particulares. Los comercios y la ausencia de insignia quedan como desconocidos.</p>
+        <label class="toggle"><span>Mostrar sin comprobar</span><input id="unchecked" type="checkbox"></label>
+        <button id="save" type="submit" disabled>Guardar preferencias</button>
+      </form>
+      <p id="feedback" role="status" aria-live="polite"></p>
+      <aside>Abre una búsqueda en <a href="https://es.wallapop.com/" target="_blank" rel="noopener">Wallapop</a>. El panel procesa 10 anuncios por lote. Mantiene los huecos y el orden para evitar cargas automáticas. Se filtran resultados cargados, no todo el catálogo.</aside>
+      <p><button id="clear" type="button">Borrar caché local</button></p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

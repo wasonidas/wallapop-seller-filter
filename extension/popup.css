@@ -1,0 +1,17 @@
+:root { font-family: system-ui, sans-serif; color: #123c39; background: #f3f8f5; color-scheme: light; }
+* { box-sizing: border-box; }
+body { width: 350px; margin: 0; }
+main { padding: 25px; }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .03em; color: #32695b; background: #deeee4; padding: 6px 9px; border-radius: 6px; }
+h1 { margin: 18px 0 9px; font-size: 24px; line-height: 1.2; letter-spacing: -.7px; }
+.intro { font-size: 13px; color: #526c65; margin: 0 0 24px; }
+label { display: block; font-size: 13px; font-weight: 650; }
+input[type="number"] { width: 100%; margin: 9px 0 20px; padding: 11px 12px; font: inherit; border: 1px solid #b9cec3; border-radius: 8px; background: white; color: #123c39; }
+.toggle { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 12px 0; }
+input[type="checkbox"] { width: 18px; height: 18px; accent-color: #176858; }
+.note { color: #667a72; font-size: 11px; line-height: 1.5; margin: 8px 0 20px; }
+button { width: 100%; padding: 12px; border: 0; border-radius: 8px; color: white; background: #176858; font: inherit; font-weight: 650; font-size: 13px; cursor: pointer; }
+button:disabled { opacity: .55; cursor: wait; }
+:focus-visible { outline: 3px solid #b78517; outline-offset: 3px; }
+#feedback { min-height: 18px; font-size: 12px; }
+aside { border-top: 1px solid #cfded3; padding-top: 14px; font-size: 12px; line-height: 1.55; color: #5c7067; }

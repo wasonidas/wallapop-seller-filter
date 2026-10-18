@@ -1,0 +1,17 @@
+{
+  "provenance": "Esquema y valores mínimos contrastados con DOM de tres anuncios y perfiles el 2026-10-18. Identificadores sustituidos; no es una respuesta completa ni una captura de red.",
+  "samples": [
+    { "props": { "pageProps": {
+      "item": { "userId": "seller-a" },
+      "itemSeller": { "id": "seller-a", "verified": true, "sellerType": "Shop", "badgeType": "shop", "stats": { "counters": { "reviews": 525 }, "ratingAverage": 4.8, "ratings": { "reviews": 96 } } }
+    } } },
+    { "props": { "pageProps": {
+      "item": { "userId": "seller-b" },
+      "itemSeller": { "id": "seller-b", "verified": false, "sellerType": null, "badgeType": null, "stats": { "counters": { "reviews": 1 }, "ratingAverage": 5, "ratings": { "reviews": 0 } } }
+    } } },
+    { "props": { "pageProps": {
+      "item": { "userId": "seller-c" },
+      "itemSeller": { "id": "seller-c", "verified": true, "sellerType": "Private", "badgeType": null, "stats": { "counters": { "reviews": 12 }, "ratingAverage": 5, "ratings": { "reviews": 100 } } }
+    } } }
+  ]
+}

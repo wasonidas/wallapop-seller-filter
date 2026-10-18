@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Filtros de vendedores para Wallapop",
+  "version": "1.0.1",
+  "description": "Filtra anuncios cargados por reseñas e identidad explícita. Datos guardados localmente.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://es.wallapop.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["https://es.wallapop.com/*"], "js": ["bootstrap.js"], "run_at": "document_idle" }],
+  "web_accessible_resources": [{
+    "resources": ["content.js", "core/filter.js", "core/progress.js", "adapters/wallapop.js", "ui/panel.js"],
+    "matches": ["https://es.wallapop.com/*"]
+  }],
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'none'" },
+  "action": {
+    "default_title": "Preferencias de vendedores",
+    "default_popup": "popup.html"
+  }
+}

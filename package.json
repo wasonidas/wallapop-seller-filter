@@ -1,0 +1,20 @@
+{
+  "name": "wallapop-seller-filters",
+  "version": "1.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "wasonidas",
+  "repository": { "type": "git", "url": "https://github.com/wasonidas/wallapop-seller-filter.git" },
+  "homepage": "https://github.com/wasonidas/wallapop-seller-filter",
+  "bugs": { "url": "https://github.com/wasonidas/wallapop-seller-filter/issues" },
+  "keywords": ["wallapop", "chrome-extension", "edge-extension", "manifest-v3", "seller-reputation"],
+  "type": "module",
+  "description": "Extensión local Manifest V3 con filtros de vendedores de Wallapop.",
+  "engines": { "node": "^22.19.0 || ^24.11.0 || >=26.0.0" },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
